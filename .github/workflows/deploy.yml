@@ -5,11 +5,13 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -25,19 +27,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'npm'
           
       - name: Install dependencies
-        run: npm ci
+        run: npm install
         
       - name: Build with Next.js
         run: npm run build
-        
-      - name: Archive build artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: next-build
-          path: ./out
         
       - name: Setup Pages
         uses: actions/configure-pages@v3
