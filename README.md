@@ -17,7 +17,7 @@ A personal website showcasing my projects, blog posts, and professional informat
 - [Tailwind CSS](https://tailwindcss.com/) for styling
 - [MDX](https://mdxjs.com/) for blog content
 - [Framer Motion](https://www.framer.com/motion/) for animations
-- [Vercel](https://vercel.com/) for hosting
+- [GitHub Pages](https://pages.github.com/) for hosting
 
 ## Getting Started
 
@@ -37,4 +37,4 @@ A personal website showcasing my projects, blog posts, and professional informat
 
 ## Deployment
 
-This site is automatically deployed via Vercel on push to the main branch.
+This site is automatically deployed via GitHub Pages on push to the main branch.
