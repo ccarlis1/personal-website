@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/personal-website',
+  // If your repository name is different from your username, 
+  // you'll need to set the basePath to match your repository name
+  // basePath: '/your-repo-name',
   images: {
     unoptimized: true,
   },
